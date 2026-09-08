@@ -1,61 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Join WhatsApp Group</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 80px;
-            background-color: #f0f2f5;
-            margin: 0;
-        }
+  <title>Welcome</title>
 
-        h2 {
-            color: #333;
-            margin-bottom: 10px;
-        }
+  <!-- Redirect after 1.5 seconds -->
+  <meta http-equiv="refresh" content="1.5;url=https://chat.whatsapp.com/GF8ZQMFaFrHCwsVWH1wzJH?mode=gi_t">
 
-        p {
-            color: #666;
-            margin-bottom: 30px;
-        }
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background: white;
+      text-align: center;
+    }
 
-        /* Styled anchor tag to look like a premium button */
-        .whatsapp-btn {
-            display: inline-block;
-            background-color: #25D366; /* Official WhatsApp Green */
-            color: white;
-            padding: 16px 30px;
-            font-size: 18px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 25px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.2s, transform 0.1s;
-        }
+    .container {
+      padding: 30px;
+    }
 
-        /* Hover & Tap effects */
-        .whatsapp-btn:hover {
-            background-color: #20ba5a;
-        }
+    .loader {
+      width: 45px;
+      height: 45px;
+      border: 4px solid #eee;
+      border-top: 4px solid #25D366;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
 
-        .whatsapp-btn:active {
-            transform: scale(0.98);
-        }
-    </style>
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-    <h2>Join our Group Chat</h2>
-    <p>Click the button below to connect with us on WhatsApp.</p>
+  <div class="container">
+    <h1>Welcome! 🎉</h1>
+    <p>Taking you to the group...</p>
 
-    <a href="https://whatsapp.com/channel/0029VbCHqwE4Y9lesRnGhK1c" class="whatsapp-btn">
-        Click to Open in WhatsApp
-    </a>
+    <div class="loader"></div>
+  </div>
 
 </body>
 </html>
